@@ -86,7 +86,7 @@ spec:
         - containerPort: 3888
           name: zkleader
         env:
-        - name : KAFKA_REPLICAS
+        - name:  KAFKA_REPLICAS
           value: "3"
         - name:  KAFKA_ZK_LOCAL
           value: "true"
@@ -95,9 +95,9 @@ spec:
         - name:  SERVER_delete_topic_enable
           value: "true"
         - name:  SERVER_log_retention_hours
-          value: "2147483647"
-        - name:  SERVER_zookeeper_connect
-          value: "kafka-zk-0.kafka-zk:2181,kafka-zk-1.kafka-zk:2181,kafka-zk-2.kafka-zk:2181"
+          value: "24"
+        #- name:  SERVER_zookeeper_connect
+        #  value: "kafka-zk-0.kafka-zk:2181,kafka-zk-1.kafka-zk:2181,kafka-zk-2.kafka-zk:2181"
         - name:  SERVER_log_dirs
           value: "/opt/kafka/data/logs"
         - name:  SERVER_zookeeper_connection_timeout_ms

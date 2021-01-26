@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-DOCKER_ORG           ?= engapa
+DOCKER_ORG           ?= rodolfoap
 DOCKER_IMAGE         ?= kafka
 
 SCALA_VERSION        ?= 2.13
